@@ -22,6 +22,8 @@ def remove_task():
         if 1<=task_number<=len(todo_list):
             removed=todo_list.pop(task_number-1)
             print(f"{removed} has been removed from the list.")
+        else:
+            print("Task number out of range. Please try again.")
     except:
         print("Invalid task number. Please try again.")
 while True:
@@ -37,3 +39,5 @@ while True:
         case "4":
             print("Exiting the program.")
             break
+        case _:
+            print("Invalid choice. Please try again.")
